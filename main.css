@@ -1,0 +1,23 @@
+h1{
+    margin-left: 50px;
+}
+
+#toDoList{
+    width: 800px;
+}
+
+#showList{
+    margin: 6px;
+    padding: 6px;
+    width: 700px;
+    border: 2px solid lightgrey;
+    border-radius: 0.5em;
+}
+
+#addList{
+    margin-left: 59px;
+    padding: 6px;
+    -webkit-appearance: none;
+    border: 2px solid lightgrey;
+    border-radius: 0.5em;
+}
