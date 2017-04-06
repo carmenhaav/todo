@@ -1,7 +1,10 @@
 /**
  * Created by Carmen on 06.04.2017.
  */
+
 $(document).ready(function () {
+
+    // add a new list item/task
    $('#add').click(function () {
         var newTask = $('#addList').val();
 
