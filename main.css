@@ -1,18 +1,42 @@
-#showList{
-    margin: 6px;
-    padding: 6px;
-    border: 2px solid lightgrey;
-    border-radius: 0.5em;
+#showList, #example{
+    width: 1060px;
+    border: transparent;
+}
+
+#listTable {
+    margin-top: 20px;
+    border: 1px dashed lightgrey;
+}
+
+#checkList {
+    margin-top: 30px;
 }
 
 #add, #remove{
     margin-top: 6px;
 }
 
-/*#addList{
-    margin-left: 59px;
-    padding: 6px;
-    -webkit-appearance: none;
-    border: 2px solid lightgrey;
-    border-radius: 0.5em;
-}*/
+td {
+    padding: 5px;
+}
+
+th {
+    padding: 12px;
+}
+
+th, td {
+    border: 1px dashed lightgrey !important;
+}
+
+/****************** BOOTSTRAP ********************/
+
+.form-control {
+    box-shadow: inset 0 1px 1px white;
+}
+
+/***************** RESPONSIVE @media *************/
+@media (min-width: 50px) and (max-width: 1198px) {
+    #showList, #example{
+        width: 100%;
+    }
+}
