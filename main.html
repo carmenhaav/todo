@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TODO list</title>
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript" src="jquery-3.2.0.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <base href="localhost/todo/">
+    <title>TO DO</title>
+    <link href="components/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <script type="text/javascript" src="components/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
 </head>
 
-<body>
+<body id="mainBody">
 <div class="container">
-    <h1>TODO List</h1>
 
     <form>
-        <input type="text" class="form-control" id="addList" placeholder="+ Enter Your Task Here"/>
-        <button id="add" class="btn btn-info btn-md" data-toggle="modal" data-target="#add" type="button">Add</button>
-        <button id="remove" class="btn btn-danger btn-md" data-toggle="modal" data-target="#add" type="button">Remove
+        <input type="text" class="form-control" id="addList" placeholder="+ add your task here"/>
+        <button id="add" class="btn btn-default btn-md" data-toggle="modal" data-target="#add" type="button">Add</button>
+        <button id="remove" class="btn btn-default btn-md" data-toggle="modal" data-target="#add" type="button">Remove
         </button>
     </form>
-
     <table class="table" align='left' id="listTable" border=1>
 
         <thead>
@@ -34,11 +31,12 @@
 
         <tbody>
         <tr id="toDoList">
-            <td><input type="checkbox" name="checkTick"></td>
+            <td><input id="checkTick" type="checkbox" name="checkTick"><label for="checkTick"></label></td>
             <td><input class="form-control" id="example" type="text" value="Example: Read the book"></td>
         </tr>
         </tbody>
     </table>
+
 </div>
 
 </body>
