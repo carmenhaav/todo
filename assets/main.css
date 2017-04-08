@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-
 body {
     font-family: 'Quicksand', sans-serif;
     background-image: url("../images/bad-ass.jpg");
     background-repeat: no-repeat;
 }
 
-
 /************** WELCOME PAGE ***********************/
-#welcomeBody{
+#welcomeBody {
     margin-top: 100px;
 }
-/************* WELCOME PAGE END ********************/
 
+/************* WELCOME PAGE END ********************/
 
 /************** MAIN PAGE **************************/
 /* first input - add task */
@@ -25,9 +23,11 @@ body {
 }
 
 /* example and user-entered input */
-#showList, #example{
+#showList, #example {
     width: 1060px;
-    /*border: transparent;*/
+    border: transparent;
+    color: #000;
+    font-size: 18px;
 }
 
 /* table design */
@@ -37,22 +37,23 @@ body {
 }
 
 /* buttons begin */
-#add, #remove{
+#add, #remove {
     margin-top: 6px;
-    border: 1px solid grey;
-    color: grey;
+    border: 1px solid #1b6d85;
+    color: white;
     font-weight: bold;
+    background-color: #1b6d85;
 }
 
 #add:hover {
-    border-color: green;
-    background: green;
+    border-color: cornflowerblue;
+    background: cornflowerblue;
     color: white;
 }
 
 #remove:hover {
-    border-color: red;
-    background: red;
+    border-color: lightcoral;
+    background: lightcoral;
     color: white;
 }
 
@@ -71,13 +72,13 @@ th {
 th, td {
     border: 1px dashed grey !important;
 }
-/* table td & th design END */
 
+/* table td & th design END */
 
 /************** CHECK TICK *********************/
 input[type=checkbox] {
     opacity: 0;
-    float:left;
+    float: left;
 }
 
 input[type=checkbox] + label {
@@ -129,22 +130,23 @@ input[type=checkbox]:checked + label::after {
     opacity: 1;
 
 }
-/************** CHECK TICK END ***************/
 
+/************** CHECK TICK END ***************/
 
 /****************** BOOTSTRAP ********************/
 .form-control {
     box-shadow: inset 0 1px 1px rgba(183, 172, 119, 0.01);
     background: rgba(183, 172, 119, 0.01);
 }
-/************** BOOTSTRAP END ********************/
 
+/************** BOOTSTRAP END ********************/
 
 /***************** RESPONSIVE @media *************/
 @media (min-width: 50px) and (max-width: 1198px) {
-    #showList, #example{
+    #showList, #example {
         width: 100%;
     }
 }
+
 /************* RESPONSIVE @media END**************/
 /*************** MAIN PAGE END *******************/

@@ -8,7 +8,6 @@ $(document).ready(function () {
 
     // add a new list item/task
     $('#add').click(function () {
-
         id++;
         var newTask = $('#addList').val();
 
