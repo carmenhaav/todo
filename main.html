@@ -12,8 +12,13 @@
 </head>
 
 <body id="mainBody">
+<!-- ################           Created by:            ################ -->
+<!-- ##########       CARMEN HAAV, carmen.haav@khk.ee       ########### -->
+
+<!-- CONTAINER BEGIN -->
 <div class="container">
 
+    <!-- User input begin -->
     <form>
         <input type="text" class="form-control" id="addList" placeholder="+ add your task here"/>
         <button id="add" class="btn btn-default btn-md" data-toggle="modal" data-target="#add" type="button">Add
@@ -21,24 +26,33 @@
         <button id="remove" class="btn btn-default btn-md" data-toggle="modal" data-target="#add" type="button">Remove
         </button>
     </form>
-    <table class="table" align='left' id="listTable" border=1>
+    <!-- User input end -->
 
+    <!-- Table for user-input tasks begin -->
+    <table class="table" id="listTable">
+
+        <!-- Table head begin -->
         <thead>
         <tr>
             <th>Check</th>
             <th>Task</th>
         </tr>
         </thead>
+        <!-- Table head end -->
 
+        <!-- Table body begin -->
         <tbody>
         <tr id="toDoList">
             <td><input id="checkTick" type="checkbox" name="checkTick"><label for="checkTick"></label></td>
             <td><input class="form-control" id="example" type="text" value="Example: Read the book"></td>
         </tr>
         </tbody>
+        <!-- Table body end -->
+
     </table>
+    <!-- Table for user-input tasks end -->
 
 </div>
-
+<!-- CONTAINER END -->
 </body>
 </html>
